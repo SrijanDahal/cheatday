@@ -12,6 +12,7 @@ const content = () => {
     <>
       {backlink()}
       {maincontent()}
+      {historytable()}
     </>
   );
 };
@@ -52,7 +53,38 @@ const maincontent = () => {
         marginTop="1rem"
         height="20vw"
         width="40vw"
+        cursor="auto"
       />
+    </div>
+  );
+};
+
+const historytable = () => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        marginTop: "1rem",
+      }}
+    >
+      <h2>History</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Restaurant</th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* Example data, replace with actual data */}
+          <tr>
+            <td>2024-02-01</td>
+            <td>Example Restaurant</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };

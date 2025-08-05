@@ -9,6 +9,7 @@ interface DivsProps {
   height?: string;
   width?: string;
   classname?: string;
+  cursor?: string;
 }
 
 function Divs({
@@ -20,13 +21,14 @@ function Divs({
   height = "20vw",
   width = "20vw",
   classname = "",
+  cursor = "pointer",
 }: DivsProps) {
   return (
     <button
       style={{
         background: "none",
         border: "none",
-        cursor: "pointer",
+        cursor: cursor,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
